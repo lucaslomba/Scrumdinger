@@ -21,10 +21,14 @@ enum Theme: String {
     var accentColor: Color {
         switch self {
         case .bubblegum, .buttercup, .lavender, .orange, .periwinkle, .poppy, .seafoam, .sky, .tan, .teal, .yellow: return .black
-        case .indigo, .magenta, .navy, .oxblood, .purple: return .white
+        case .indigo, .magenta, .navy, .oxblood, .purple: return .black
         }
     }
     var mainColor: Color {
-        Color(.yellow)
+        Color("")
+    }
+    
+    var name: String {
+        rawValue.capitalized
     }
 }
